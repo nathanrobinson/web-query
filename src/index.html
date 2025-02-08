@@ -2,11 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <title>Web Query</title>
 
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <h1>🕸⁉ Web Query</h1>
+    <h2>Usage:</h2>
+    <pre>web-query [-d|--debug] [-q|--query "selector"] "url"</pre>
+    <p>
+      -q | --query: Query the document using a valid <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">CSS selector</a> and print the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText">innerText</a>.
+      Multiple -q and corresponding queries can be provided and matches will be printed on new lines. web-query will automatically exit after the last query is run.
+    </p>
+    <p>
+      -d | --debug: Open the dev tools.
+    </p>
+    <p>
+      url: The url to open. "https://" is automatically prepended to the url if it is not included.
+    </p>
   </body>
 </html>
